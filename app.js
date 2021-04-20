@@ -1,14 +1,26 @@
-const express = require('express')
+const express = require("express")
 const app = express()
 
-app.listen (3000, function (req, res){
-    console.log('Bienvenidos a Mercado Liebre');
+app.get("/", function(req,res){
+    res.sendFile(__dirname + "/views/index.html")
 })
 
-app.get ('/', function (req, res){
-    res.sendFile(__dirname + '/views/home.html')
+app.get("/newsletter",function(req,res){
+    res.sendFile(__dirname + "/views/newsletter.html")
 })
 
-app.get ('*', function(req, res){
-    res.sendFile(__dirname + '/public' + req.url)
+app.get("/register",function(req,res){
+    res.sendFile(__dirname + "/views/register.html")
+})
+
+app.get("/login",function(req,res){
+    res.sendFile(__dirname + "/views/login.html")
+})
+
+app.get("*",function(req,res){
+    res.sendFile(__dirname + "/public/" + req.url)
+})
+
+app.listen(3000, function(){
+    console.log("Para ver el sitio, ingresá a http://localhost:3000/")
 })

@@ -1,0 +1,346 @@
+/*GENERALIDADES*/
+* {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px 10px 10px;
+    background-color:#EAC926;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.logo{
+    width: 45%;
+}
+
+.buscar{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.barra-busqueda{
+    display: flex;
+    background-color:white;
+    border-radius: 5px;
+    height: fit-content;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button{
+    border: none;
+    background-color: white;
+    width: 30%;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+}
+
+.msj-encabezado{
+    text-align: center;
+    padding: 8px;
+}
+
+.fa-hand-holding-usd{
+    width: fit-content;
+}
+
+.msj-cuotas{
+    display: inline;
+    width: fit-content;
+    font-size: 12px;
+}
+
+.menu{
+    display: none;
+}
+
+.menu-button{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    height: 40px;
+    background-color: #0044AA;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2.5%;
+}
+
+.menu-button:hover{
+    background-color: #0022AA;
+    cursor:pointer;
+}
+
+/*FOOTER*/
+.footer{
+    font-size: 10px;
+    padding: 20px 10px 20px 10px;
+    margin: 10px;
+}
+
+.articulo-footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icono{
+    font-size: 2em;
+    color: #0022AA;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.titulos-h4{
+    color: rgb(78, 77, 77);
+    font-size: 24px;
+    text-align: center;
+}
+
+.texto-footer{
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.copyright{
+    padding-top: 2em;
+    color: #666;
+    font-size: 12px;
+}
+
+/*CONTENIDO*/
+.banner{
+    display: none;
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+.titulos-h2{
+    padding: 15px;
+    width: 100%;
+    margin-right:auto;
+    margin-left: auto;
+    color: #666;
+}
+
+/* --> home*/
+
+.container-ult-visita{
+    background-color: #ebebeb;
+}
+
+.container-ofertas{
+    background-color: #ebebeb;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articulo{
+    margin:12px;
+    padding: 15px 15px 15px 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.image{
+    border-bottom: rgb(197, 197, 197) solid 1px;
+}
+
+.precio-desc{
+    display: flex;
+    align-items: center;
+}
+
+.precio{
+    padding-left: 10px;
+    width: fit-content;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.descuento{
+    padding-right: 10px;
+    width: fit-content;
+    color: rgb(105, 189, 105);
+    font-weight: 500;
+}
+
+.fa-truck{
+    color: rgb(4, 189, 4);
+    border: rgb(4, 189, 4) solid 0.5px;
+    border-radius: 100%;
+    padding:5px;
+    width: fit-content;
+    position: relative;
+    left: 85%;
+    bottom: 4%;
+    transition: transform 2s;
+}
+
+h5{
+    display: none;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #666;
+    padding: 10px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.articulo:hover .fa-truck{
+    transform: rotateZ(-90deg);
+}
+
+.articulo:hover h5{
+    display: flex;
+}
+
+/* --> formularios*/
+
+.formulario{
+    padding: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #ebebeb;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    border: gray 0.5px solid;
+}
+
+.ingresar-button{
+    background-color: #0044AA;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    width: 25%;
+    height: 2em;
+}
+
+.ingresar-button:hover{
+    background-color: #0022AA;
+}
+
+.reset-button{
+    background-color: #AA0044;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    width: 25%;
+    height: 2em;
+}
+
+.reset-button:hover{
+    background-color: #CC1155;
+}
+
+/* MEDIA QUERIES*/
+
+@media(min-width:768px){
+    .logo{
+        width: 25%;
+    }
+
+    .barra-busqueda{
+        width: 45%;
+
+    }
+
+    .msj-encabezado{
+        width: 25%;
+    }
+
+    .navbar{
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .menu-button{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        padding:10px;
+
+    }
+
+    .links-uno{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: fit-content;
+    }
+    
+    .links-dos{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: fit-content;
+    }
+    
+    .banner{
+        display: block;
+    }
+
+    .msjs-footer{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .titulos-h4{
+        color: rgb(78, 77, 77);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .productos{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* --> formularios*/
+
+    .input{
+    width: 50%;
+    border-radius: 5px;
+    }
+    
+}
